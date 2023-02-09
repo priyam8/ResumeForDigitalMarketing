@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    background-color: black;
+  }
+  
+  .nav {
+    margin: 0;
+    padding-top:2%;
+    width: 200px;
+    background-color: #3d3d3d;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .nav a {
+    display: block;
+    color: rgb(255, 255, 255);
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  
+  
+  .nav a:hover:not(.active) {
+    background-color: #e6c0f1;
+    color: rgb(0, 0, 0);
+  }
+  
+  div.about{
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 500px;
+    color: white;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .nav {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .nav a {float: left;}
+    div.about {margin-left: 0;}
+    
+  }
+  
+  @media screen and (max-width: 400px) {
+    .nav a {
+      text-align: center;
+      float: none;
+      
+    }
+    
+  }
+
+
+ 
+  
+  .avatar-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.737), rgba(0, 0, 0, 0.5)), url("images/priyam.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  
+  
+
+  .avatar-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  
+  .avatar-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    font-weight: bold;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes example{
+    from {background-color: rgb(44, 195, 250);}
+  to {background-color: rgb(254, 211, 83);}
+  }
+  
+  div.experience{
+    margin-left: 200px;
+    margin-top: 350px;
+    padding: 2px 16px;
+    height:200px;
+    color: white;
+  }
+
+
+ 
+  div.certificate{
+    margin-left: 200px;
+    padding: 2px 16px;
+    height:200px;
+    color: white;
+  }
+  
+  div.skills{
+    margin-left: 200px;
+    
+    padding: 2px 16px;
+     height:200px ;
+    color: white;
+  }
+
+  @media screen and (max-width: 700px) {
+    div.experience{ margin-left: 0;}
+    div.certificate{margin-left: 0;}
+    div.skills{margin-left: 0;}
+  }
+li{
+  padding-left: 23px;
+  margin-bottom: 5px;
+}
+
+
+  .column {
+    float: left;
+    width: 32.33%;
+    padding: 5px;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+ @media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  
+  .modal {
+     display: none;
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgb(0, 0, 0); 
+    background-color: rgba(15, 1, 23, 0.733); 
+    
+  }
+  
+  
+.modal-content {
+  background-color: #fefefe;
+  border-radius: 20px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  
+}
+
+
+
+.close {
+  color: #474747;
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
